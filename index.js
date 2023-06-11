@@ -18,6 +18,13 @@ inquirer
           message: "Please enter the color for the text in the logo.",
           name: "textColor",
           },
+          {
+            // the list of shapes to choose from: circle, triangle, and square
+            type:"list",
+            message: "Please select the shape for the logo.",
+            choices: ["circle", "triangle", "square"],
+            name: "logoShape",
+            },
       ])
 
       .then((answers) => {
