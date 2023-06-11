@@ -9,8 +9,15 @@ inquirer
       {
         // the text inside the logo
         type:"input",
-        message: "Please enter the text for the logo (three characers only).",
+        message: "Please enter the text for the logo (up to three characters).",
         name: "logoText",
+        // validate function for text input of up to three characters
+        validate: function(logoText){
+          if (logoText.length > 3){
+              return "Logo text must be only up to three characters.";
+          }
+          return true;
+      }
       },
       {
         // the color of the text inside the logo
