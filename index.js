@@ -12,11 +12,15 @@ inquirer
         message: "Please enter the text for the logo (three characers only).",
         name: "logoText",
         },
+        {
+          // the text inside the logo
+          type:"input",
+          message: "Please enter the color for the text in the logo.",
+          name: "textColor",
+          },
       ])
 
       .then((answers) => {
-        console.log(answers,(err) =>
-            err ? console.log(err) : console.log('Successfully created README.md!')
-          );
+        console.log(answers);
         });
   
