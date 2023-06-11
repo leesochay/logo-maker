@@ -1,14 +1,22 @@
-// function init () {
+ // required packages and modules to generate the logo
+  const inquirer = require('inquirer');
+  const fs = require('fs');
 
-function image(title, type) {
-    this.title = title;
-    this.type = type;
-    this.nap = function () {
-        return this.title;
-    };
-    this.noNap = function () {
-        console.log(type);
-    };
-}
+ // npm inquirer package utilzing the command line interface for questions and answers to create the logo
 
-module.exports = image;
+inquirer
+  .prompt([
+      {
+        // the text inside the logo
+        type:"input",
+        message: "Please enter the text for the logo (three characers only).",
+        name: "logoText",
+        },
+      ])
+
+      .then((answers) => {
+        console.log(answers,(err) =>
+            err ? console.log(err) : console.log('Successfully created README.md!')
+          );
+        });
+  
