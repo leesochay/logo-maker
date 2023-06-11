@@ -1,6 +1,7 @@
  // required packages and modules to generate the logo
   const inquirer = require('inquirer');
   const fs = require('fs');
+  const Square = require('./lib/shapes.js');
 
  // npm inquirer package utilzing the command line interface for questions and answers to create the logo
 
@@ -44,6 +45,14 @@ inquirer
   ])
 
       .then((answers) => {
+        // output will be the answers from the inquirer prompts
         console.log(answers);
+        // sets svgFile from the answers passed to and read from the Square constructor
+        const svgFile = new Square(answers.logoText, answers.textColor, answers.logoShape, answers.shapeColor);
+        console.log(svgFile);
+        // calls the render function from the Square class in shapes.js and logs that in the console
+        const squareShape = svgFile.render();
+        console.log(squareShape);
         });
   
+
