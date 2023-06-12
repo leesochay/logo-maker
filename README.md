@@ -2,7 +2,7 @@
 
  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-## Table of Contents (Optional)
+## Table of Contents
   - [Description](#description)
   - [Installation](#installation)
   - [Usage](#usage)
@@ -12,7 +12,7 @@
   - [Questions](#questions)
 
 ## Description
-In this project, the task is to build a Node.js command-line application that takes in user input and then generates a logo as an svg file.Th i s project uses inquirer, an npm package, as the method of asking the user questions and capturing the responses. Users will
+In this project, the task is to build a Node.js command-line application that takes in user input and then generates a logo as an svg file. This project uses inquirer, an npm package, as the method of asking the user questions and capturing the responses. Users will be able to provide input for text of the logo, as well as the color and shape of the logo. The logo will be generated in an SVG (Scalable Vector Graphics) format. As a part of the project, a testing framework, Jest, was used to test the svg rendering function.
 
 ## Installation
 1. This application utilizes Node.js, so this will need to be installed.
