@@ -24,7 +24,7 @@ In this project, the task is to build a Node.js command-line application that ta
 ![Inquirer screenshot](https://github.com/leesochay/logo-maker/blob/main/examples/Inquirer_Screenshot.png)
 
 2. To test the rendering svg function, enter "npm test" into the command-line.
-![Jest test screenshot](examples/Jest_testscreenshot.png)
+![Jest test screenshot](https://github.com/leesochay/logo-maker/blob/main/examples/Jest_testscreenshot.png)
 
 
 ## Contributing
