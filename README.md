@@ -25,14 +25,17 @@ In this project, the task is to build a Node.js command-line application that ta
 
 ## Contributing
 1. The npm package Inquirer
+2. The npm package Jest
+3. Notes and video replay from class
+4. MDN Web Docs [SVG Tutorial](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial).
+5. MDN Web Docs [SVG Basic Shapes](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Basic_Shapes).
+6. MDN Web Docs [SVG Texts](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Texts).
+7. [SVG Jock](https://marketplace.visualstudio.com/items?itemName=jock.svg).
 
 ## Tests
 1. This project includes a test script with Jest, a npm package for testing.
+2. To test the rendering svg function, enter "npm test" into the command-line.
 
 ## License
 MIT License
 A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code. Please refer to [License: MIT](https://choosealicense.com/licenses/mit/) for more information.
-
-## Questions
-My GitHub username is leesochay and you can link to my profile at https://github.com/leesochay.  
-For any questions, please feel free to email me at 
