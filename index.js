@@ -45,27 +45,27 @@ inquirer
   ])
 
       .then((answers) => {
-        
         if (answers.logoShape === "circle") {
           console.log("Circle!");
           const circleFile = new Circle(answers.logoText, answers.textColor, answers.logoShape, answers.shapeColor);
-          console.log(circleFile);
-          const circleShape = circleFile.render();
-          console.log(circleShape);
+          const svgCircleContent = circleFile.render();
+          fs.writeFile('logo.svg', svgCircleContent, (err) =>
+            err ? console.log(err) : console.log('Generated logo.svg!')
+          );
           } else if (answers.logoShape === "triangle") {
             console.log("Triangle!");
             const triangleFile = new Triangle(answers.logoText, answers.textColor, answers.logoShape, answers.shapeColor);
-            console.log(triangleFile);
-            // calls the render function from the Square class in shapes.js and logs that in the console
-            const triangleShape = triangleFile.render();
-            console.log(triangleShape);
+            const svgTriangleContent = triangleFile.render();
+            fs.writeFile('logo.svg', svgTriangleContent, (err) =>
+              err ? console.log(err) : console.log('Generated logo.svg!')
+            );
           } else if (answers.logoShape === "square") {
             console.log("Square!");
-            const svgFile = new Square(answers.logoText, answers.textColor, answers.logoShape, answers.shapeColor);
-            console.log(svgFile);
-            // calls the render function from the Square class in shapes.js and logs that in the console
-            const squareShape = svgFile.render();
-            console.log(squareShape);
+            const squareFile = new Square(answers.logoText, answers.textColor, answers.logoShape, answers.shapeColor);
+            const svgSquareContent = squareFile.render();
+            fs.writeFile('logo.svg', svgSquareContent, (err) =>
+              err ? console.log(err) : console.log('Generated logo.svg!')
+            );
           } else {
         console.log(error);
       }});
