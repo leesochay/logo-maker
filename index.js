@@ -1,8 +1,8 @@
  // required packages and modules to generate the logo
   const inquirer = require('inquirer');
   const fs = require('fs');
-  const Square = require('./lib/shapes.js');
-
+  const { Square, Circle, Triangle } = require('./lib/shapes');
+  
  // npm inquirer package utilzing the command line interface for questions and answers to create the logo
 
 inquirer
@@ -49,10 +49,18 @@ inquirer
         console.log(answers);
         // sets svgFile from the answers passed to and read from the Square constructor
         const svgFile = new Square(answers.logoText, answers.textColor, answers.logoShape, answers.shapeColor);
+        const circleFile = new Circle(answers.logoText, answers.textColor, answers.logoShape, answers.shapeColor);
+        const triangleFile = new Triangle(answers.logoText, answers.textColor, answers.logoShape, answers.shapeColor);
         console.log(svgFile);
+        console.log(circleFile);
+        console.log(triangleFile);
         // calls the render function from the Square class in shapes.js and logs that in the console
         const squareShape = svgFile.render();
         console.log(squareShape);
+        const circleShape = circleFile.render();
+        console.log(circleShape);
+        const triangleShape = triangleFile.render();
+        console.log(triangleShape);
         });
   
 
