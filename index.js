@@ -1,3 +1,5 @@
+ 
+ function init(){
  // required packages and modules to generate the logo
   const inquirer = require('inquirer');
   const fs = require('fs');
@@ -8,7 +10,7 @@
 inquirer
   .prompt([
       {
-        // the text inside the logo
+        // enter the logo text
         type:"input",
         message: "Please enter the text for the logo (up to three characters).",
         name: "logoText",
@@ -24,7 +26,7 @@ inquirer
       }
       },
       {
-        // the color of the text inside the logo
+        // enter the color of the text of the logo (color keyword or hex)
         type:"input",
         message: "Please enter the color for the text in the logo.",
         name: "textColor",
@@ -66,5 +68,6 @@ inquirer
           } else {
         console.log(error);
       }});
-  
+    }
 
+init();
