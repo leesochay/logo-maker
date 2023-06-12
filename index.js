@@ -45,7 +45,7 @@ inquirer
         name: "shapeColor",
       },
   ])
-
+// the call back of the generated svg file from the Inquirer responses
       .then((answers) => {
         if (answers.logoShape === "circle") {
           const shape = new Circle(answers.logoText, answers.textColor, answers.logoShape, answers.shapeColor);
