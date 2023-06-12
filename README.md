@@ -16,9 +16,12 @@ In this project, the task is to build a Node.js command-line application that ta
 
 ## Installation
 1. This application utilizes Node.js, so this will need to be installed.
+2. Install npm package [Inquirer](https://www.npmjs.com/package/inquirer) as the application to ask questions and capture the repsonses.
+3. Install npm package [Jest](https://www.npmjs.com/package/jest) as the testing applcation for the rendering svg function.
 
 ## Usage
-1. Enter node index.js into the command-line.
+1. To generate the svg logo, enter "node index.js" into the command-line and follow the prompts.
+2. To test the rendering svg function, enter "npm test" into the command-line.
 
 ## Contributing
 1. The npm package Inquirer
