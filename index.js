@@ -46,23 +46,20 @@ inquirer
 
       .then((answers) => {
         if (answers.logoShape === "circle") {
-          console.log("Circle!");
-          const circleFile = new Circle(answers.logoText, answers.textColor, answers.logoShape, answers.shapeColor);
-          const svgCircleContent = circleFile.render();
+          const shape = new Circle(answers.logoText, answers.textColor, answers.logoShape, answers.shapeColor);
+          const svgCircleContent = shape.render();
           fs.writeFile('logo.svg', svgCircleContent, (err) =>
             err ? console.log(err) : console.log('Generated logo.svg!')
           );
           } else if (answers.logoShape === "triangle") {
-            console.log("Triangle!");
-            const triangleFile = new Triangle(answers.logoText, answers.textColor, answers.logoShape, answers.shapeColor);
-            const svgTriangleContent = triangleFile.render();
+            const shape = new Triangle(answers.logoText, answers.textColor, answers.logoShape, answers.shapeColor);
+            const svgTriangleContent = shape.render();
             fs.writeFile('logo.svg', svgTriangleContent, (err) =>
               err ? console.log(err) : console.log('Generated logo.svg!')
             );
           } else if (answers.logoShape === "square") {
-            console.log("Square!");
-            const squareFile = new Square(answers.logoText, answers.textColor, answers.logoShape, answers.shapeColor);
-            const svgSquareContent = squareFile.render();
+            const shape = new Square(answers.logoText, answers.textColor, answers.logoShape, answers.shapeColor);
+            const svgSquareContent = shape.render();
             fs.writeFile('logo.svg', svgSquareContent, (err) =>
               err ? console.log(err) : console.log('Generated logo.svg!')
             );
