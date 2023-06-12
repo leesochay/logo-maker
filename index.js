@@ -45,22 +45,29 @@ inquirer
   ])
 
       .then((answers) => {
-        // output will be the answers from the inquirer prompts
-        console.log(answers);
-        // sets svgFile from the answers passed to and read from the Square constructor
-        const svgFile = new Square(answers.logoText, answers.textColor, answers.logoShape, answers.shapeColor);
-        const circleFile = new Circle(answers.logoText, answers.textColor, answers.logoShape, answers.shapeColor);
-        const triangleFile = new Triangle(answers.logoText, answers.textColor, answers.logoShape, answers.shapeColor);
-        console.log(svgFile);
-        console.log(circleFile);
-        console.log(triangleFile);
-        // calls the render function from the Square class in shapes.js and logs that in the console
-        const squareShape = svgFile.render();
-        console.log(squareShape);
-        const circleShape = circleFile.render();
-        console.log(circleShape);
-        const triangleShape = triangleFile.render();
-        console.log(triangleShape);
-        });
+        
+        if (answers.logoShape === "circle") {
+          console.log("Circle!");
+          const circleFile = new Circle(answers.logoText, answers.textColor, answers.logoShape, answers.shapeColor);
+          console.log(circleFile);
+          const circleShape = circleFile.render();
+          console.log(circleShape);
+          } else if (answers.logoShape === "triangle") {
+            console.log("Triangle!");
+            const triangleFile = new Triangle(answers.logoText, answers.textColor, answers.logoShape, answers.shapeColor);
+            console.log(triangleFile);
+            // calls the render function from the Square class in shapes.js and logs that in the console
+            const triangleShape = triangleFile.render();
+            console.log(triangleShape);
+          } else if (answers.logoShape === "square") {
+            console.log("Square!");
+            const svgFile = new Square(answers.logoText, answers.textColor, answers.logoShape, answers.shapeColor);
+            console.log(svgFile);
+            // calls the render function from the Square class in shapes.js and logs that in the console
+            const squareShape = svgFile.render();
+            console.log(squareShape);
+          } else {
+        console.log(error);
+      }});
   
 
