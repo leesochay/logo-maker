@@ -21,7 +21,8 @@ In this project, the task is to build a Node.js command-line application that ta
 
 ## Usage
 1. To generate the svg logo, enter "node index.js" into the command-line and follow the prompts.
-![Inquirer screenshot](https://github.com/leesochay/logo-maker/blob/main/examples/Inquirer_Screenshot.png)
+
+![Inquirer Screenshot](https://github.com/leesochay/logo-maker/assets/128553488/0e4500be-7bb5-4901-bce3-e6db702d65bf)
 
 2. To test the rendering svg function, enter "npm test" into the command-line.
 ![Jest test screenshot](https://github.com/leesochay/logo-maker/blob/main/examples/Jest_testscreenshot.png)
