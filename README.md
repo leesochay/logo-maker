@@ -20,6 +20,9 @@ In this project, the task is to build a Node.js command-line application that ta
 3. Install npm package [Jest](https://www.npmjs.com/package/jest) as the testing applcation for the rendering svg function.
 
 ## Usage
+
+Demo Video: [LeeSochay Logo Maker Demo Video](https://drive.google.com/file/d/16CSKhX7eixLT6uKAdYZEZ-RIBTK9xBfh/view)
+
 1. To generate the svg logo, enter "node index.js" into the command-line and follow the prompts.
 
 ![Inquirer Screenshot](https://github.com/leesochay/logo-maker/assets/128553488/0e4500be-7bb5-4901-bce3-e6db702d65bf)
